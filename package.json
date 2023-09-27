@@ -3,6 +3,27 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"description": "Link Sharing App",
+	"keywords": [
+		"Código Facilito",
+		"Bootcamp",
+		"Frontend Avanzado",
+		"TypeScript",
+		"HTML",
+		"SASS",
+		"Firebase"
+	],
+	"author": "Galeed Gutierrez <galeedeveloper@gmail.com> (https://galeedgutierrez.com/)",
+	"contributors": [
+		"Galeed Gutierrez",
+		"Janet Hugarcia",
+		"Mario Karajallo"
+	],
+	"license": "MPL-2.0",
+	"bugs": {
+		"url": "https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto/issues"
+	},
+	"homepage": "https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto#readme",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
@@ -12,6 +33,10 @@
 		"stylelint": "npx stylelint \"**/*.scss\"",
 		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
 		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto.git"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^6.7.3",
@@ -26,6 +51,8 @@
 		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"eslint-plugin-unused-imports": "^3.0.0",
 		"husky": "^8.0.0",
+		"postcss-preset-env": "^9.1.4",
+		"sass": "^1.68.0",
 		"stylelint": "^15.10.3",
 		"stylelint-config-standard-scss": "^11.0.0",
 		"stylelint-order": "^6.0.3",
@@ -37,5 +64,8 @@
 	"lint-staged": {
 		"*.(j|t)s": "npm run lint:fix",
 		"*.s(a|c)ss": "npm run stylelint:fix"
+	},
+	"dependencies": {
+		"@types/node": "^20.7.0"
 	}
 }

@@ -58,4 +58,4 @@ http://localhost:5173
 ## Licencia 📄
 
 Este proyecto está bajo la licencia Mozilla Public License 2.0. Consulta el archivo [LICENSE](https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-projecto/blob/main/LICENSE) para más detalles.
-[![Mozilla Public License 2.0](https://img.shields.io/badge/Mozilla_Public_License_2.0-ff2828?style=for-the-badge&label=License "Mozilla Public License 2.0")](https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-projecto/blob/main/LICENSE "Mozilla Public License 2.0")
+[![Mozilla Public License 2.0](https://img.shields.io/badge/MPL_2.0-ff2828?style=for-the-badge&label=License "Mozilla Public License 2.0")](https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-projecto/blob/main/LICENSE "Mozilla Public License 2.0")

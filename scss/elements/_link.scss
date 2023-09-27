@@ -1,0 +1,8 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+a {
+	// color: var(--text-color);
+	text-decoration: none;
+}

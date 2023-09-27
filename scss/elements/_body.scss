@@ -1,0 +1,10 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+body {
+	// background-color: var(--background-color);
+	// color: var(--text-color);
+	font-family: variables.$primary-font;
+
+	@include mixins.body-m;
+}

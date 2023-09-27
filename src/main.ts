@@ -1,4 +1,5 @@
 import './style.css';
+import '../scss/index.scss';
 
 import viteLogo from '../public/vite.svg';
 import { setupCounter } from './counter.ts';
