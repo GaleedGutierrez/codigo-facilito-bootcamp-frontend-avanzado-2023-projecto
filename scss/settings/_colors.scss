@@ -1,0 +1,32 @@
+// Base colors
+$_han-purple: oklch(53.93% 0.264 282.08deg);
+$_pale-violet: oklch(79.27% 0.115 292.76deg);
+$_pavender-web: oklch(94.8% 0.0276 295.0409deg);
+$_dark-charcoal: oklch(32.11% 0 0deg);
+$_nickel: oklch(55.47% 0 0deg);
+$_light-silver: oklch(88.45% 0 0deg);
+$_lotion: oklch(98.48% 0 0deg);
+$_white: oklch(100% 0 0deg);
+$_coral-red: oklch(65.29% 0.233 26.61deg);
+
+// Purple
+$purple: $_han-purple;
+$purple-hover-color: $_pale-violet;
+$light-purple: $_pavender-web;
+
+// Grey
+$dark-grey: $_dark-charcoal;
+$grey: $_nickel;
+$border: $_light-silver;
+$light-grey: $_lotion;
+
+// White
+$white: $_white;
+
+// Red
+$red: $_coral-red;
+
+// Text
+$text-color-dark: $dark-grey;
+$text-color-grey: $grey;
+$text-color-purple: $purple;
