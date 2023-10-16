@@ -29,7 +29,7 @@
 git clone https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto.git
 ```
 
-2. Ingresa a la capeta `codigo-facilito-**bootcamp**-frontend-avanzado-2023-proyecto`:
+2. Ingresa a la capeta `codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto`:
 
 ```bash
 cd codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto

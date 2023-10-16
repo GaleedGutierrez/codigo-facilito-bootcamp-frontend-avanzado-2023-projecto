@@ -1,9 +1,0 @@
-@use "../tools/mixins";
-
-h1 {
-	@include mixins.heading-m;
-}
-
-h2 {
-	@include mixins.heading-s;
-}

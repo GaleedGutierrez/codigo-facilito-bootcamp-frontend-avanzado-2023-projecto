@@ -1,13 +1,70 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Components</title>
+	</head>
+	<body>
+		<h1>Paragraph</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+			soluta labore a eaque est ea nihil illo excepturi doloribus unde
+			dolorem culpa nam aut quidem, quo aperiam qui consectetur
+			dignissimos.
+		</p>
+		<br />
+		<br />
+		<h1>Links</h1>
+		<a href="#">I am a link</a>
+		<br />
+		<br />
+		<h1>Button Primary</h1>
+		<button class="a-button a-button-primary">Button Primary</button>
+		<br />
+		<br />
+		<button class="a-button a-button-primary" disabled>
+			Disable Button Primary
+		</button>
+		<br />
+		<br />
+		<h1>Button Secondary</h1>
+		<button class="a-button a-button-secondary">Button Secondary</button>
+		<br />
+		<br />
+		<button class="a-button a-button-secondary" disabled>
+			Disable Button Secondary
+		</button>
+		<br />
+		<br />
+
+		<h1>Tabs</h1>
+		<tab-link title="Links" href="#"></tab-link>
+		<tab-link title="Links" href="#" selected></tab-link>
+		<tab-link title="Profile Details" href="#"></tab-link>
+		<tab-link title="Profile Details" href="#" selected></tab-link>
+		<h1>Inputs</h1>
+		<br />
+		<form action="">
+			<text-field
+				required
+				id="text-field-1"
+				title="Texto ejemplo"
+				type="email"
+				placeholder="Texto de ejemplo"
+				error-message="Mensaje de error"
+				autocomplete="email"
+			></text-field>
+			<input
+				type="submit"
+				value="Submit"
+				class="a-button a-button-primary"
+			/>
+		</form>
+		<h1>Dropdown Field</h1>
+		<custom-select></custom<-select>
+		<h1>All Preview List</h1>
+		<a href="github"></a>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
