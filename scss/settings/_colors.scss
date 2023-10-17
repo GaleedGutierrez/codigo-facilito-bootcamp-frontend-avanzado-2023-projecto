@@ -6,6 +6,8 @@ $_color-black-lch: 0% 0 0deg;
 $_purple: oklch($_color-primary-lch);
 $_purple-hover-color: oklch(79.27% 0.115 292.76deg);
 $_light-purple: oklch(94.8% 0.0276 295.0409deg);
+$_purple-twitch: oklch(59.21% 0.253 295.9deg);
+$_purple-codepen: oklch(31.31% 0.115 287.08deg);
 
 // Grey
 $_dark-grey: oklch(32.11% 0 0deg);
@@ -21,6 +23,18 @@ $_black: oklch($_color-black-lch);
 
 // Red
 $_red: oklch(65.29% 0.233 26.61deg);
+$_red-youtube: oklch(62.43% 0.217 26.19deg);
+$_red-codewars: oklch(42.67% 0.153 357.01deg);
+
+// Orange
+$_orange-gitlab: oklch(63.19% 0.204 33.8deg);
+$_orange-stack-overflow: oklch(68.28% 0.178 50.8deg);
+
+// Blue
+$_blue-twitter: oklch(73.54% 0.125 230.66deg);
+$_blue-linkedin: oklch(57.44% 0.2328 264.0676deg);
+$_blue-facebook: oklch(42.78% 0.173 266.59deg);
+$_blue-hashnode: oklch(42.81% 0.243 264.17deg);
 
 // Gral
 $purple-lch: $_color-primary-lch;
@@ -43,8 +57,20 @@ $color-borders: $_borders;
 $color-black: $_black;
 
 // Background
+$background-black: $_black;
+$background-dark-gray: $_dark-grey;
 $background-white: $_light-grey;
 $background-light-grey: $_light-grey;
+$background-twitter: $_blue-twitter;
+$background-linkedin: $_blue-linkedin;
+$background-youtube: $_red-youtube;
+$background-facebook: $_blue-facebook;
+$background-twitch: $_purple-twitch;
+$background-codewars: $_red-codewars;
+$background-codepen: $_purple-codepen;
+$background-gitlab: $_orange-gitlab;
+$background-hashnode: $_blue-hashnode;
+$background-stack-overflow: $_orange-stack-overflow;
 
 // Border
 $border-grey: $_borders;

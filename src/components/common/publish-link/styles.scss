@@ -1,0 +1,74 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+.publish-link {
+	inline-size: 100%;
+	padding: variables.$space-4;
+	border-radius: variables.$border-radius-2;
+	color: variables.$text-color-white;
+
+	&__icon-name {
+		gap: variables.$space-2;
+
+		@include mixins.justify-between-flex;
+	}
+
+	&--github {
+		background-color: variables.$background-black;
+	}
+
+	&--frontend-mentor {
+		background-color: variables.$background-white;
+		color: variables.$text-color-dark;
+	}
+
+	&--twitter {
+		background-color: variables.$background-twitter;
+	}
+
+	&--linkedin {
+		background-color: variables.$background-linkedin;
+	}
+
+	&--youtube {
+		background-color: variables.$background-youtube;
+	}
+
+	&--facebook {
+		background-color: variables.$background-facebook;
+	}
+
+	&--twitch {
+		background-color: variables.$background-twitch;
+	}
+
+	&--devto {
+		background-color: variables.$background-dark-gray;
+	}
+
+	&--codewars {
+		background-color: variables.$background-codewars;
+	}
+
+	&--codepen {
+		background-color: variables.$background-codepen;
+	}
+
+	&--gitlab {
+		background-color: variables.$background-gitlab;
+	}
+
+	&--hashnode {
+		background-color: variables.$background-hashnode;
+	}
+
+	&--stack-overflow {
+		background-color: variables.$background-stack-overflow;
+	}
+
+	&--freecodecamp {
+		background-color: variables.$background-black;
+	}
+
+	@include mixins.justify-between-flex;
+}
