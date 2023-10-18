@@ -1,0 +1,25 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+.logo {
+	display: flex;
+	gap: variables.$space-2;
+	align-items: center;
+	color: variables.$text-color-dark;
+
+	&__text {
+		display: none;
+	}
+
+	&[is-full] &__text {
+		display: inline;
+	}
+
+	@include mixins.heading-m;
+
+	@media screen and (width >= 768px) {
+		&__text {
+			display: inline;
+		}
+	}
+}
