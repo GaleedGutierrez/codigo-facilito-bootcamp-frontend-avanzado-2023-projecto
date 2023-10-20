@@ -83,7 +83,7 @@ class TextField extends HTMLElement implements WebComponent {
 
 		INPUT_CONTAINER.innerHTML = /* html */ `
 			<label for="${id}">
-				<p>${title}</p>
+				<p class="m-text-field__title">${title}</p>
 				<input
 					${REQUIRED_ATTRIBUTE}
 					type="${type}"

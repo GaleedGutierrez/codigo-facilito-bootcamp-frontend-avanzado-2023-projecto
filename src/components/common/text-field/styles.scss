@@ -5,7 +5,8 @@ $screen-tablet: variables.$screen-tablet;
 
 .m-text-field__container:has(
 		.m-text-field__input:not(:focus-visible, :placeholder-shown):invalid
-	) {
+	)
+	* {
 	color: variables.$text-color-red;
 }
 
@@ -16,6 +17,10 @@ $screen-tablet: variables.$screen-tablet;
 		inset-inline-start: variables.$space-4;
 		block-size: 1.4rem;
 		inline-size: 1.4rem;
+	}
+
+	&__title {
+		color: variables.$text-color-dark;
 	}
 
 	&__error-message {
