@@ -1,0 +1,23 @@
+.m-header {
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	right: 15px;
+	top: 24px;
+	width: calc(100% - 30px);
+	& a {
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+.a-header-edit {
+	width: 159px;
+}
+
+.a-header-share {
+	width: 133px;
+}
