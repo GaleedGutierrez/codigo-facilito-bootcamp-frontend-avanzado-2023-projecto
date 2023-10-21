@@ -1,0 +1,43 @@
+.m-card-preview {
+	background-color: #fff;
+	border-radius:  24px;
+	width: 349px;
+	height: 569px;
+	padding: 48px 56px;
+	margin: -140px auto auto;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+	&__image {
+		border-radius: 100%;
+		width: 104px;
+		height: 104px;
+		border: 4px solid #633CFF;
+		margin-bottom: 25px;
+	}
+	&__name {
+		font-size: 32px;
+		margin-bottom: 8px;
+	}
+	&__email {
+		font-size: 16px;
+		margin-bottom: 56px;
+	}
+}
+
+.o-shadow {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	z-index: -10;
+	width: 349px;
+	height: 450px;
+	border-radius:  24px;
+	background-color: transparent;
+	box-shadow: 0px 15px 10px 5px #ddd;
+
+}
+
+.o-publish-link-wrapper {
+	margin-bottom: 20px;
+}
