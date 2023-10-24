@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
+		<title>Create Account</title>
 	</head>
 	<body>
 		<div class="container">
@@ -12,8 +12,8 @@
 			</header>
 			<main class="login-container">
 				<div class="info-container">
-					<h1 class="info-container__title">Login</h1>
-					<p>Add your details below to get back into the app</p>
+					<h1 class="info-container__title">Create account</h1>
+					<p>Let’s get you started sharing your links!</p>
 				</div>
 				<form class="form-container" action="" id="form-login">
 					<text-field
@@ -25,21 +25,34 @@
 						autocomplete="email"
 					></text-field>
 					<text-field
-						id="password"
-						title="Password"
+						id="new-password"
+						title="Create password"
 						type="password"
-						placeholder="Enter your password"
+						placeholder="At least .8 characters"
 						error-message="Please check again"
+						autocomplete="new-password"
+						minlength="8"
 					></text-field>
+					<text-field
+						id="check-password"
+						title="Confirm password"
+						type="password"
+						placeholder="At least .8 characters"
+						error-message="Please check again"
+						minlength="8"
+					></text-field>
+					<p class="login-container__info-password">
+						Password must contain at least 8 characters
+					</p>
 					<button id="submit" class="a-button a-button-primary">
-						Login
+						Create new account
 					</button>
 				</form>
 				<p class="create-account is-text-center">
-					Don’t have an account? <a href="">Create account</a>
+					Already have an account? <a href="">Login</a>
 				</p>
 			</main>
 		</div>
-		<script type="module" src="./login.ts"></script>
+		<script type="module" src="./create-account.ts"></script>
 	</body>
 </html>

@@ -29,7 +29,11 @@ const config: UserConfigExport = {
 		rollupOptions: {
 			input: {
 				index: resolve(__dirname, './index.html'),
-				login: resolve(__dirname, './views/login/index.html')
+				login: resolve(__dirname, './views/login/index.html'),
+				'create-account': resolve(
+					__dirname,
+					'./views/create-account/index.html'
+				)
 			}
 		}
 	},
