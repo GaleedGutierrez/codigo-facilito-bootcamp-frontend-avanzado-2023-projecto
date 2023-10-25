@@ -1,9 +1,19 @@
+import { resolve } from 'node:path';
 import { fileURLToPath, URL } from 'node:url';
 import { resolve } from 'node:path';
 
 import { defineConfig, UserConfigExport } from 'vite';
 
 const config: UserConfigExport = {
+	build: {
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, 'index.html'),
+				previewMarked: resolve(__dirname, 'preview-marked.html'),
+				offline: resolve(__dirname, 'offline.html')
+			}
+		}
+	},
 	base: './',
 	server: {
 		open: './',
