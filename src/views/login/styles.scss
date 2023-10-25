@@ -16,6 +16,7 @@ $screen-tablet: variables.$screen-tablet;
 
 .header {
 	align-self: flex-start;
+	padding-inline-start: variables.$space-8;
 }
 
 .login-container {
@@ -44,6 +45,7 @@ $screen-tablet: variables.$screen-tablet;
 
 	.header {
 		align-self: center;
+		padding-inline-start: 0;
 	}
 
 	.login-container {
