@@ -61,3 +61,22 @@ $screen-tablet: variables.$screen-tablet;
 		color: variables.$text-color-red;
 	}
 }
+
+.is-invalid {
+	color: variables.$text-color-red;
+
+	.m-text-field__title {
+		color: variables.$text-color-red;
+	}
+
+	/* stylelint-disable-next-line no-descending-specificity */
+	.m-text-field__input {
+		border-color: variables.$border-red;
+		color: variables.$text-color-red;
+	}
+
+	/* stylelint-disable-next-line no-descending-specificity */
+	.m-text-field__input ~ .m-text-field__error-message {
+		display: block;
+	}
+}

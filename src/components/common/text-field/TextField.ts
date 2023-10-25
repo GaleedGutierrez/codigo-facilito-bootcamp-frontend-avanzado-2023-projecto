@@ -27,13 +27,14 @@ const ICONS = {
 
 export class TextField extends HTMLElement implements WebComponent {
 	public shadow: ShadowRoot;
+	public input: HTMLInputElement | null = null;
+	public container: HTMLDivElement | null = null;
 	public type: string | null = null;
 	public placeholder: string | null = null;
 	public autocomplete: string | null = null;
 	public name: string | null = null;
 	public required: string | null = null;
 	public 'error-message': string | null = null;
-	public input: HTMLInputElement | null = null;
 	public minlength: string | null = null;
 	#internals: ElementInternals;
 	static formAssociated = true;
@@ -49,6 +50,9 @@ export class TextField extends HTMLElement implements WebComponent {
 
 		this.input = this.shadowRoot?.querySelector(
 			'input'
+		) as HTMLInputElement;
+		this.container = this.shadowRoot?.querySelector(
+			'div'
 		) as HTMLInputElement;
 		this.#internals.setValidity(
 			this.input.validity,

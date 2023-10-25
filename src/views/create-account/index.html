@@ -15,7 +15,7 @@
 					<h1 class="info-container__title">Create account</h1>
 					<p>Let’s get you started sharing your links!</p>
 				</div>
-				<form class="form-container" action="" id="form-login">
+				<form class="form-container" action="" id="form-create-account">
 					<text-field
 						id="email"
 						title="Email address"
@@ -34,7 +34,7 @@
 						minlength="8"
 					></text-field>
 					<text-field
-						id="check-password"
+						id="confirm-password"
 						title="Confirm password"
 						type="password"
 						placeholder="At least .8 characters"
@@ -44,7 +44,11 @@
 					<p class="login-container__info-password">
 						Password must contain at least 8 characters
 					</p>
-					<button id="submit" class="a-button a-button-primary">
+					<button
+						type="submit"
+						id="submit"
+						class="a-button a-button-primary"
+					>
 						Create new account
 					</button>
 				</form>
