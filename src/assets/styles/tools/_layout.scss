@@ -1,5 +1,8 @@
-@mixin center-flex {
+@use "@styles/settings/variables";
+
+@mixin center-flex($direction: row) {
 	display: flex;
+	flex-direction: $direction;
 	justify-content: center;
 	align-items: center;
 }
@@ -9,4 +12,10 @@
 	flex-flow: wrap;
 	justify-content: space-between;
 	align-items: $vertical-align;
+}
+
+@mixin box {
+	padding: variables.$space-10;
+	border-radius: variables.$border-radius-3;
+	background-color: variables.$background-white;
 }

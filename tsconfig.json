@@ -30,7 +30,7 @@
 			"@/*": ["./src/*"],
 			"@types/*": ["./src/types/*"],
 			"@components/*": ["./src/components/*"],
-			"@styles/*": ["./scss/*"],
+			"@styles/*": ["./src/assets/styles/*"],
 			"@images/*": ["./assets/images/*"],
 			"@fonts/*": ["./assets/fonts/*"],
 			"@icons/*": ["./assets/icons/*"]

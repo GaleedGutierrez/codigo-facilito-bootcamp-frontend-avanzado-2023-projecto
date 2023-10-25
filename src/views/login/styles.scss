@@ -1,0 +1,54 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+$screen-tablet: variables.$screen-tablet;
+
+.container {
+	gap: variables.$space-10;
+	height: 100vh;
+	height: 100svh;
+	inline-size: fit-content;
+	max-inline-size: 57.3rem;
+	margin-inline: auto;
+
+	@include mixins.center-flex(column);
+}
+
+.header {
+	align-self: flex-start;
+	padding-inline-start: variables.$space-8;
+}
+
+.login-container {
+	max-inline-size: 48.2rem;
+	padding: variables.$space-8;
+}
+
+.info-container {
+	margin-block-end: variables.$space-10;
+
+	&__title {
+		margin-block-end: variables.$space-2;
+	}
+}
+
+.form-container {
+	display: grid;
+	gap: variables.$space-6;
+	margin-block-end: variables.$space-6;
+}
+
+@media screen and (width >= $screen-tablet) {
+	body {
+		background-color: variables.$background-light-grey;
+	}
+
+	.header {
+		align-self: center;
+		padding-inline-start: 0;
+	}
+
+	.login-container {
+		@include mixins.box;
+	}
+}

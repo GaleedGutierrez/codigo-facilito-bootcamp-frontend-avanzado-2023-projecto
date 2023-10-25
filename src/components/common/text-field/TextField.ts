@@ -15,7 +15,8 @@ type Attributes =
 	| 'id'
 	| 'name'
 	| 'required'
-	| 'autocomplete';
+	| 'autocomplete'
+	| 'minlength';
 
 const ICONS = {
 	url: LINK_ICON,
@@ -24,15 +25,17 @@ const ICONS = {
 	text: ''
 };
 
-class TextField extends HTMLElement implements WebComponent {
+export class TextField extends HTMLElement implements WebComponent {
 	public shadow: ShadowRoot;
+	public input: HTMLInputElement | null = null;
+	public container: HTMLDivElement | null = null;
 	public type: string | null = null;
 	public placeholder: string | null = null;
 	public autocomplete: string | null = null;
 	public name: string | null = null;
 	public required: string | null = null;
 	public 'error-message': string | null = null;
-	#input: HTMLInputElement | null = null;
+	public minlength: string | null = null;
 	#internals: ElementInternals;
 	static formAssociated = true;
 
@@ -45,13 +48,16 @@ class TextField extends HTMLElement implements WebComponent {
 	public connectedCallback(): void {
 		this.#render();
 
-		this.#input = this.shadowRoot?.querySelector(
+		this.input = this.shadowRoot?.querySelector(
 			'input'
 		) as HTMLInputElement;
+		this.container = this.shadowRoot?.querySelector(
+			'div'
+		) as HTMLInputElement;
 		this.#internals.setValidity(
-			this.#input.validity,
-			this.#input.validationMessage,
-			this.#input
+			this.input.validity,
+			this.input.validationMessage,
+			this.input
 		);
 	}
 
@@ -83,7 +89,7 @@ class TextField extends HTMLElement implements WebComponent {
 
 		INPUT_CONTAINER.innerHTML = /* html */ `
 			<label for="${id}">
-				<p>${title}</p>
+				<p class="m-text-field__title">${title}</p>
 				<input
 					${REQUIRED_ATTRIBUTE}
 					type="${type}"
@@ -92,6 +98,7 @@ class TextField extends HTMLElement implements WebComponent {
 					class="m-text-field__input"
 					placeholder="${placeholder}"
 					autocomplete="${autocomplete}"
+					minlength="${this.minlength ? this.minlength : 0}"
 				/>
 				${ICONS[type as keyof typeof ICONS]}
 				<p class="m-text-field__error-message">
@@ -130,7 +137,8 @@ class TextField extends HTMLElement implements WebComponent {
 			'id',
 			'name',
 			'required',
-			'autocomplete'
+			'autocomplete',
+			'minlength'
 		];
 	}
 }

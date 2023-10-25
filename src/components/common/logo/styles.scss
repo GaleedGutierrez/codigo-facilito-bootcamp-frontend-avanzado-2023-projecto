@@ -1,6 +1,8 @@
 @use "@styles/settings/variables";
 @use "@styles/tools/mixins";
 
+$screen-tablet: variables.$screen-tablet;
+
 .logo {
 	display: flex;
 	gap: variables.$space-2;
@@ -17,7 +19,7 @@
 
 	@include mixins.heading-m;
 
-	@media screen and (width >= 768px) {
+	@media screen and (width >= $screen-tablet) {
 		&__text {
 			display: inline;
 		}

@@ -23,7 +23,7 @@ class CustomLoco extends HTMLElement implements WebComponent {
 
 		LINK_CONTAINER.innerHTML = /* html */ `
 			${LINK_CIRCLE_ICON}
-			<span class="logo__text">devlink</span>
+			<span class="logo__text">devlinks</span>
 		`;
 
 		if (IS_FULL) LINK_CONTAINER.setAttribute('is-full', '');

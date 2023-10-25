@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<custom-logo is-full></custom-logo>
+			</header>
+			<main class="login-container">
+				<div class="info-container">
+					<h1 class="info-container__title">Login</h1>
+					<p>Add your details below to get back into the app</p>
+				</div>
+				<form class="form-container" action="" id="form-login">
+					<text-field
+						id="email"
+						title="Email address"
+						type="email"
+						placeholder="e.g. alex@email.com"
+						error-message="Please check again"
+						autocomplete="email"
+					></text-field>
+					<text-field
+						id="password"
+						title="Password"
+						type="password"
+						placeholder="Enter your password"
+						error-message="Please check again"
+					></text-field>
+					<button id="submit" class="a-button a-button-primary">
+						Login
+					</button>
+				</form>
+				<p class="create-account is-text-center">
+					Don’t have an account? <a href="">Create account</a>
+				</p>
+			</main>
+		</div>
+		<script type="module" src="./login.ts"></script>
+	</body>
+</html>

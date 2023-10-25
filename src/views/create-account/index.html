@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Account</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<custom-logo is-full></custom-logo>
+			</header>
+			<main class="login-container">
+				<div class="info-container">
+					<h1 class="info-container__title">Create account</h1>
+					<p>Let’s get you started sharing your links!</p>
+				</div>
+				<form class="form-container" action="" id="form-create-account">
+					<text-field
+						id="email"
+						title="Email address"
+						type="email"
+						placeholder="e.g. alex@email.com"
+						error-message="Please check again"
+						autocomplete="email"
+					></text-field>
+					<text-field
+						id="new-password"
+						title="Create password"
+						type="password"
+						placeholder="At least .8 characters"
+						error-message="Please check again"
+						autocomplete="new-password"
+						minlength="8"
+					></text-field>
+					<text-field
+						id="confirm-password"
+						title="Confirm password"
+						type="password"
+						placeholder="At least .8 characters"
+						error-message="Please check again"
+						minlength="8"
+					></text-field>
+					<p class="login-container__info-password">
+						Password must contain at least 8 characters
+					</p>
+					<button
+						type="submit"
+						id="submit"
+						class="a-button a-button-primary"
+					>
+						Create new account
+					</button>
+				</form>
+				<p class="create-account is-text-center">
+					Already have an account? <a href="">Login</a>
+				</p>
+			</main>
+		</div>
+		<script type="module" src="./create-account.ts"></script>
+	</body>
+</html>
