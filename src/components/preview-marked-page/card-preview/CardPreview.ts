@@ -1,11 +1,11 @@
+import '@/components/common/publish-link/Publish';
+
 import BASE_CSS from '@/assets/styles/index.scss?inline';
 import { WebComponent } from '@/types/WebComponents';
-import '@/components/common/publish-link/Publish';
 
 import CSS from './styles.scss?inline';
 
 class CardPreview extends HTMLElement implements WebComponent {
-
 	public constructor() {
 		super();
 		this.attachShadow({ mode: 'open', delegatesFocus: true });
@@ -39,6 +39,7 @@ class CardPreview extends HTMLElement implements WebComponent {
 		MAIN_CONTAINER.className = 'm-card-preview';
 
 		TEMPLATE.content.append(MAIN_CONTAINER.cloneNode(true));
+
 		return TEMPLATE.content.cloneNode(true);
 	};
 
