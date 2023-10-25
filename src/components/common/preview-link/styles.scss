@@ -1,0 +1,29 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+$screen-tablet: variables.$screen-tablet;
+
+.preview {
+	display: inline-block;
+	inline-size: fit-content;
+	padding-block: variables.$space-2;
+	padding-inline: variables.$space-4;
+	text-align: center;
+
+	&__title {
+		display: none;
+	}
+
+	@media screen and (width >= $screen-tablet) {
+		padding-block: variables.$space-3;
+		padding-inline: variables.$space-7;
+
+		svg {
+			display: none;
+		}
+
+		&__title {
+			display: inline;
+		}
+	}
+}
