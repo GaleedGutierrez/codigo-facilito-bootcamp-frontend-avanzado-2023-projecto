@@ -1,1 +1,51 @@
-/* stylelint-disable-next-line no-empty-source */
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+$screen-tv: variables.$screen-tv;
+$screen-tablet: variables.$screen-tablet;
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-inline-size: calc(variables.$screen-tv * 16);
+	margin-block-start: variables.$space-4;
+
+	&__links-container {
+		display: flex;
+	}
+}
+
+.main {
+	padding: variables.$space-10;
+
+	&__text-container {
+		margin-block-end: variables.$space-10;
+	}
+}
+
+.border-button {
+	border-block-end: variables.$space-025 solid variables.$color-borders;
+	margin-block-end: variables.$space-4;
+}
+
+.info-container {
+	display: grid;
+	gap: variables.$space-3;
+	padding: variables.$space-5;
+	border-radius: variables.$border-radius-3;
+	margin-block: variables.$space-6;
+	background-color: variables.$background-light-grey;
+}
+
+@media screen and (width >= $screen-tablet) {
+	.form {
+		display: grid;
+	}
+
+	.form__button {
+		justify-self: end;
+		inline-size: fit-content;
+		padding-inline: variables.$space-7;
+	}
+}

@@ -39,6 +39,7 @@
 		"url": "git+https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto.git"
 	},
 	"devDependencies": {
+		"@csstools/postcss-oklab-function": "^3.0.7",
 		"@typescript-eslint/eslint-plugin": "^6.7.3",
 		"@typescript-eslint/parser": "^6.7.3",
 		"eslint": "^8.50.0",
@@ -51,6 +52,7 @@
 		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"eslint-plugin-unused-imports": "^3.0.0",
 		"husky": "^8.0.0",
+		"postcss": "^8.4.31",
 		"postcss-preset-env": "^9.1.4",
 		"sass": "^1.68.0",
 		"stylelint": "^15.10.3",

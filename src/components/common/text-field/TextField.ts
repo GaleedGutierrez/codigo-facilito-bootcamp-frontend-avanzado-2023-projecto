@@ -86,6 +86,9 @@ export class TextField extends HTMLElement implements WebComponent {
 		const REQUIRED_ATTRIBUTE = this.hasAttribute('required')
 			? 'required'
 			: '';
+		const IS_PROFILE_DETAILS = this.hasAttribute('is-profile-details')
+			? 'is-profile-details'
+			: '';
 
 		INPUT_CONTAINER.innerHTML = /* html */ `
 			<label for="${id}">
@@ -100,15 +103,14 @@ export class TextField extends HTMLElement implements WebComponent {
 					autocomplete="${autocomplete}"
 					minlength="${this.minlength ? this.minlength : 0}"
 				/>
-				${ICONS[type as keyof typeof ICONS]}
+				${IS_PROFILE_DETAILS ? '' : ICONS[type as keyof typeof ICONS]}
 				<p class="m-text-field__error-message">
 					${errorMessage}
 				</p>
 			</label>
 		`;
 
-		INPUT_CONTAINER.className =
-			'o-position-relative m-text-field__container';
+		INPUT_CONTAINER.className = `o-position-relative m-text-field__container ${IS_PROFILE_DETAILS}`;
 		TEMPLATE.content.append(INPUT_CONTAINER.cloneNode(true));
 
 		return TEMPLATE.content.cloneNode(true);

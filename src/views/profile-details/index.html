@@ -6,14 +6,58 @@
 		<title>Profile Details</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<custom-logo></custom-logo>
 			<div class="header__links-container">
 				<tab-link title="Links"></tab-link>
-				<tab-link title="Profile Details"></tab-link>
+				<tab-link title="Profile Details" selected></tab-link>
 			</div>
 			<preview-link></preview-link>
 		</header>
+		<main class="main">
+			<div class="main__text-container">
+				<h1>Profile Details</h1>
+				<p>
+					Add your details to create a personal touch to your profile.
+				</p>
+			</div>
+			<form action="" class="form">
+				<div class="border-button">
+					<upload-img id="input-file"></upload-img>
+					<div class="info-container">
+						<text-field
+							type="text"
+							title="First name*"
+							placeholder="e.g. John"
+							error-message="Can’t be empty"
+							minlength="3"
+							is-profile-details
+						></text-field>
+						<text-field
+							type="text"
+							title="Last name*"
+							placeholder="e.g. Appleseed"
+							error-message="Can’t be empty"
+							minlength="3"
+							is-profile-details
+						></text-field>
+						<text-field
+							type="email"
+							title="Last name*"
+							placeholder="e.g. email@example.com"
+							error-message="Can’t be empty"
+							is-profile-details
+						></text-field>
+					</div>
+				</div>
+				<button
+					type="submit"
+					class="a-button a-button-primary form__button"
+				>
+					Save
+				</button>
+			</form>
+		</main>
 		<script type="module" src="./profile-details.ts"></script>
 	</body>
 </html>
