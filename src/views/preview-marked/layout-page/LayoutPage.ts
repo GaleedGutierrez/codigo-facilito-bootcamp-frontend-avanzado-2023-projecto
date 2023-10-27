@@ -1,6 +1,6 @@
 import BASE_CSS from '@/assets/styles/index.scss?inline';
 import { WebComponent } from '@/types/WebComponents';
-import '@/components/preview-marked-page/card-preview/CardPreview';
+import '@views/preview-marked/card-preview/CardPreview';
 
 import CSS from './styles.scss?inline';
 
