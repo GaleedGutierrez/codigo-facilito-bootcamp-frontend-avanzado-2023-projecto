@@ -32,7 +32,8 @@
 		"lint:fix": "npx eslint --fix ./**.{js,mjs,cjs,ts,mts}",
 		"stylelint": "npx stylelint \"**/*.scss\"",
 		"stylelint:fix": "npx stylelint --fix \"**/*.scss\"",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"postbuild": "mv dist/src/views/** dist/ && rm -rf dist/src"
 	},
 	"repository": {
 		"type": "git",
