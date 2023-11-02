@@ -50,7 +50,7 @@ npm run dev
 5. Abre tu navegador e ingresa a:
 
 ```bash
-http://localhost:5173
+http://localhost:8080
 ```
 
 ¡Listo! Ahora puedes ver el proyecto y modificarlo a tu gusto. 😄
