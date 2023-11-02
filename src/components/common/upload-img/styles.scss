@@ -25,6 +25,7 @@ $screen-tablet: variables.$screen-tablet;
 		background-size: cover;
 		color: variables.$text-color-primary;
 		font-weight: variables.$weight-semibold;
+		cursor: pointer;
 
 		@include mixins.center-flex(column);
 	}
@@ -42,12 +43,14 @@ $screen-tablet: variables.$screen-tablet;
 	}
 
 	.custom-file-input-container {
+		display: flex;
 		gap: variables.$space-6;
+		justify-content: flex-start;
+		align-items: center;
+		inline-size: 75%;
 
 		span {
 			max-inline-size: 21.5rem;
 		}
-
-		@include mixins.center-flex;
 	}
 }
