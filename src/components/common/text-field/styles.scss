@@ -80,3 +80,17 @@ $screen-tablet: variables.$screen-tablet;
 		display: block;
 	}
 }
+
+.is-profile-details {
+	@media screen and (width >= $screen-tablet) {
+		label {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.m-text-field__input {
+			inline-size: 75%;
+		}
+	}
+}

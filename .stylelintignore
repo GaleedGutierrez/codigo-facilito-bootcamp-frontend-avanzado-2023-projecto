@@ -1,6 +1,10 @@
 **/*_normalize.scss
 /node_modules/*
-/**/main.css
-/**/index.css
-/**/style.css
-/**/styles.css
+/build/**/main.css
+/dist/**/main.css
+/build/**/index.css
+/dist/**/index.css
+/build/**/style.css
+/dist/**/style.css
+/build/**/styles.css
+/dist/**/styles.css

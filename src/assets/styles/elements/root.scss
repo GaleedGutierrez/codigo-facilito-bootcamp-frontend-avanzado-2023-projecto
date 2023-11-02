@@ -1,0 +1,6 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+:root {
+	--color-white: #{variables.$color-white};
+}

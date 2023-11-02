@@ -1,0 +1,56 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+$screen-tablet: variables.$screen-tablet;
+
+.custom-input-container {
+	padding: variables.$space-5;
+	border-radius: variables.$border-radius-3;
+	background-color: variables.$background-light-grey;
+}
+
+.custom-file-input {
+	display: none;
+
+	&__box-img {
+		gap: variables.$space-3;
+		block-size: 19.3rem;
+		inline-size: 19.3rem;
+		border-radius: variables.$border-radius-3;
+		border-radius: 12px;
+		margin-block: variables.$space-4 variables.$space-6;
+		background-color: variables.$color-primary-light;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		color: variables.$text-color-primary;
+		font-weight: variables.$weight-semibold;
+		cursor: pointer;
+
+		@include mixins.center-flex(column);
+	}
+
+	&__format {
+		@include mixins.body-s;
+	}
+}
+
+@media screen and (min-width: $screen-tablet) {
+	.custom-input-container label {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.custom-file-input-container {
+		display: flex;
+		gap: variables.$space-6;
+		justify-content: flex-start;
+		align-items: center;
+		inline-size: 75%;
+
+		span {
+			max-inline-size: 21.5rem;
+		}
+	}
+}

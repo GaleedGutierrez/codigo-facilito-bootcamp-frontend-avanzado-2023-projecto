@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile Details</title>
+	</head>
+	<body>
+		<header class="header">
+			<custom-logo></custom-logo>
+			<div class="header__links-container">
+				<tab-link title="Links"></tab-link>
+				<tab-link title="Profile Details" selected></tab-link>
+			</div>
+			<preview-link></preview-link>
+		</header>
+		<main class="main">
+			<section class="main__preview">
+				<div class="preview-border__phone o-position-relative">
+					<svg
+						width="308"
+						height="632"
+						viewBox="0 0 308 632"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1 54.5C1 24.9528 24.9528 1 54.5 1H253.5C283.047 1 307 24.9528 307 54.5V577.5C307 607.047 283.047 631 253.5 631H54.5C24.9528 631 1 607.047 1 577.5V54.5Z"
+							stroke="#737373"
+						/>
+					</svg>
+					<svg
+						class="phone__interior-parte"
+						width="286"
+						height="612"
+						viewBox="0 0 286 612"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1 45.5C1 20.9233 20.9233 1 45.5 1H69.5C75.8513 1 81 6.14873 81 12.5C81 20.5081 87.4919 27 95.5 27H190.5C198.508 27 205 20.5081 205 12.5C205 6.14873 210.149 1 216.5 1H240.5C265.077 1 285 20.9233 285 45.5V566.5C285 591.077 265.077 611 240.5 611H45.5C20.9233 611 1 591.077 1 566.5V45.5Z"
+							fill="white"
+							stroke="#737373"
+						/>
+					</svg>
+					<div class="user-info">
+						<img src="" alt="User picture" class="user-info__img" />
+						<p class="user-info__email">a@g.com</p>
+						<publish-link
+							title="github"
+							href="https://github.com/GaleedGutierrez/codigo-facilito-bootcamp-frontend-avanzado-2023-proyecto"
+						></publish-link>
+						<publish-link title="twitter" href=""></publish-link>
+						<publish-link title="linkedin" href=""></publish-link>
+					</div>
+				</div>
+			</section>
+			<div class="main__user-data">
+				<div class="main__text-container">
+					<h1>Profile Details</h1>
+					<p>
+						Add your details to create a personal touch to your
+						profile.
+					</p>
+				</div>
+				<form action="" class="form">
+					<div class="border-button">
+						<upload-img id="input-file"></upload-img>
+						<div class="info-container">
+							<text-field
+								type="text"
+								title="First name*"
+								placeholder="e.g. John"
+								error-message="Can’t be empty"
+								minlength="3"
+								is-profile-details
+							></text-field>
+							<text-field
+								type="text"
+								title="Last name*"
+								placeholder="e.g. Appleseed"
+								error-message="Can’t be empty"
+								minlength="3"
+								is-profile-details
+							></text-field>
+							<text-field
+								type="email"
+								title="Last name*"
+								placeholder="e.g. email@example.com"
+								error-message="Can’t be empty"
+								is-profile-details
+							></text-field>
+						</div>
+					</div>
+					<button
+						type="submit"
+						class="a-button a-button-primary form__button"
+					>
+						Save
+					</button>
+				</form>
+			</div>
+		</main>
+		<script type="module" src="./profile-details.ts"></script>
+	</body>
+</html>

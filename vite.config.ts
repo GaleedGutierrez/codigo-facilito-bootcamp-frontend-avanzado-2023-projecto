@@ -1,8 +1,10 @@
 import { resolve } from 'node:path';
 import { fileURLToPath, URL } from 'node:url';
-import { resolve } from 'node:path';
 
+import postcssOKLabFunction from '@csstools/postcss-oklab-function';
 import { defineConfig, UserConfigExport } from 'vite';
+
+console.log(resolve(__dirname, './'));
 
 const config: UserConfigExport = {
 	base: './',
@@ -27,8 +29,8 @@ const config: UserConfigExport = {
 		}
 	},
 	build: {
-		// sourcemap: true,
-		// manifest: true,
+		sourcemap: true,
+		manifest: true,
 		rollupOptions: {
 			input: {
 				index: resolve(__dirname, 'index.html'),
@@ -43,6 +45,11 @@ const config: UserConfigExport = {
 				),
 				offline: resolve(__dirname, 'offline.html')
 			}
+		}
+	},
+	css: {
+		postcss: {
+			plugins: [postcssOKLabFunction({ preserve: true })]
 		}
 	},
 	optimizeDeps: {

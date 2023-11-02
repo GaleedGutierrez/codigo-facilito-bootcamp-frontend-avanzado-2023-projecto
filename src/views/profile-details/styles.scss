@@ -1,0 +1,108 @@
+@use "@styles/settings/variables";
+@use "@styles/tools/mixins";
+
+$screen-tv: variables.$screen-tv;
+$screen-desktop: variables.$screen-desktop;
+$screen-tablet: variables.$screen-tablet;
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-inline-size: calc(variables.$screen-tv * 16);
+	margin-block-start: variables.$space-4;
+
+	&__links-container {
+		display: flex;
+	}
+}
+
+.main {
+	padding: variables.$space-10;
+
+	&__preview {
+		display: none;
+	}
+
+	&__text-container {
+		margin-block-end: variables.$space-10;
+	}
+}
+
+.border-button {
+	border-block-end: variables.$space-025 solid variables.$color-borders;
+	margin-block-end: variables.$space-4;
+}
+
+.info-container {
+	display: grid;
+	gap: variables.$space-3;
+	padding: variables.$space-5;
+	border-radius: variables.$border-radius-3;
+	margin-block: variables.$space-6;
+	background-color: variables.$background-light-grey;
+}
+
+.preview-border__phone {
+	width: fit-content;
+
+	.phone__interior-parte {
+		position: absolute;
+		inset-block-start: 49.5%;
+		inset-inline-start: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.user-info {
+	position: absolute;
+	inset-block-start: 49.5%;
+	inset-inline-start: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: variables.$space-5;
+	justify-content: center;
+	inline-size: 80%;
+	transform: translate(-50%, -50%);
+
+	&__email {
+		align-self: center;
+	}
+
+	&__img {
+		align-self: center;
+		height: 9.6rem;
+		width: 9.6rem;
+		border-radius: variables.$border-radius-circle;
+		background-color: variables.$color-borders;
+	}
+}
+
+@media screen and (width >= $screen-tablet) {
+	.form {
+		display: grid;
+	}
+
+	.form__button {
+		justify-self: end;
+		inline-size: fit-content;
+		padding-inline: variables.$space-7;
+	}
+}
+
+@media screen and (width >= $screen-desktop) {
+	.main {
+		display: flex;
+		gap: variables.$space-6;
+		justify-content: space-between;
+		align-items: center;
+
+		&__preview {
+			display: block;
+		}
+
+		&__user-data {
+			width: 75%;
+		}
+	}
+}

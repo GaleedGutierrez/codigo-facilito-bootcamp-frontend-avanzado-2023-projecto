@@ -1,6 +1,9 @@
+/* eslint-disable import/no-unresolved */
+import '@/components/preview-marked-page/card-preview/CardPreview';
+import '@views/preview-marked/card-preview/CardPreview';
+
 import BASE_CSS from '@/assets/styles/index.scss?inline';
 import { WebComponent } from '@/types/WebComponents';
-import '@views/preview-marked/card-preview/CardPreview';
 
 import CSS from './styles.scss?inline';
 
@@ -28,6 +31,7 @@ class HeadOptions extends HTMLElement implements WebComponent {
 		HEADER_CONTAINER.className = 'm-header';
 
 		TEMPLATE.content.append(HEADER_CONTAINER.cloneNode(true));
+
 		return TEMPLATE.content.cloneNode(true);
 	};
 
