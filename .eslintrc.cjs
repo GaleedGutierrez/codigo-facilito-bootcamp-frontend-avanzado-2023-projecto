@@ -91,6 +91,7 @@ const rules = {
 	"func-call-spacing": ["error", "never"],
 	"no-console": ["warn", { allow: ["warn", "error"] }], // Opcional
 	"no-underscore-dangle": "error",
+	"prefer-arrow-callback": "error",
 
 	//? TypeScript ESLint
 	"@typescript-eslint/type-annotation-spacing": "error",
