@@ -18,13 +18,10 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-
-		"alwaysStrict": true,
 		"esModuleInterop": true,
 		"noImplicitReturns": true,
 		"forceConsistentCasingInFileNames": true,
-		"noImplicitAny": true,
-		"strictNullChecks": true,
+
 
 		"paths": {
 			"@/*": ["./src/*"],
