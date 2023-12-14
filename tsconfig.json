@@ -22,6 +22,8 @@
 		"noImplicitReturns": true,
 		"forceConsistentCasingInFileNames": true,
 
+		"removeComments": true,
+
 
 		"paths": {
 			"@/*": ["./src/*"],
