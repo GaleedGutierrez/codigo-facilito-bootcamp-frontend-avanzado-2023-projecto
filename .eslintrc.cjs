@@ -94,6 +94,7 @@ const rules = {
 	"prefer-arrow-callback": "error",
 
 	//? TypeScript ESLint
+	"@typescript-eslint/no-explicit-any": "error",
 	"@typescript-eslint/type-annotation-spacing": "error",
 	"@typescript-eslint/no-non-null-assertion": "warn",
 	"@typescript-eslint/consistent-type-definitions": "warn",
